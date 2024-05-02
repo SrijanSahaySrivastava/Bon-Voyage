@@ -1,0 +1,72 @@
+.main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+}
+
+.input {
+    padding: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    color: #1f2937;
+    margin-top: 16px;
+    text-align: center;
+}
+::placeholder {
+    text-align: center;
+}
+.input.location {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}  
+.input.date-go {
+    width: 40%;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+.input.date-back {
+    width: 40%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-input {
+    padding: auto;
+    display: flex;
+    justify-items: center;
+    height: 50px;
+}
+
+.submit-button {
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #d1d5db;
+}

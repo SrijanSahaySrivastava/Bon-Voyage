@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+service Chat {
+  rpc final_endpoint(Task) returns (ChatResponse);
+  rpc get_endpoint(GetTask) returns (ChatHistoriesResponse);
+}
+
+message Task {
+  string Place = 1;
+  string Food = 2;
+  string Interests = 3;
+  string Health = 4;
+  int32 Days = 5;
+  string email = 6;
+  string in_date = 7;
+  string out_date = 8;
+}
+
+message GetTask {
+  string email = 1;
+}
+
+message ChatResponse {
+  string response = 1;
+}
+
+message ChatHistoriesResponse {
+  repeated string chat_histories = 1;
+}
